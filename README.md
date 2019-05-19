@@ -4,4 +4,13 @@ This tool is for absolute beginners to wifi penetration testing, no commands are
 To use this tool just  go in the directory and use the commands  "chmod +x run.sh" and "./run.sh" 
 handshake file stored in /root/Desktop/filename.cap
 
-Thank You
+
+# NO PREREQUISITES ARE NEEDED
+# copy the commands to use the tool
+# git clone
+# cd easyhandshake
+# chmod +x run.sh
+# ./run.sh
+
+# Thank You
+
