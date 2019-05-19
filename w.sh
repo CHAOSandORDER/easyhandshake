@@ -44,6 +44,10 @@ then
 	
 fi
 
+read -p "Enter the path of the Handshake.cap :" pt
+
+cowpatty -c -r $pt
+
 #restarts network-manager
 
 gnome-terminal -- "./r.sh"
