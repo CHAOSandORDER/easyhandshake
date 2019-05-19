@@ -44,9 +44,10 @@ then
 	
 fi
 
-read -p "Enter the path of the Handshake.cap :" pt
 
-cowpatty -c -r $pt
+read -p "Enter the name of the Handshake.cap :" pt
+
+cowpatty -c -r /root/Desktop/$pt
 
 #restarts network-manager
 
