@@ -7,7 +7,7 @@ handshake file stored in /root/Desktop/filename.cap
 
 # NO PREREQUISITES ARE NEEDED
 # copy the commands to use the tool
-# git clone
+# git clone https://github.com/CHAOSandORDER/easyhandshake.git
 # cd easyhandshake
 # chmod +x run.sh
 # ./run.sh
