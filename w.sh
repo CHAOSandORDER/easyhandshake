@@ -1,6 +1,23 @@
 #!/bin/bash
 
 # wireless credentials
+
+while read line
+
+do
+
+cp /root/Desktop/$line.cap /root/Desktop/ehandshake
+
+done </root/Desktop/ehandshake/temp.txt
+
+while read line
+
+do
+
+rm /root/Desktop/$line.* 
+
+done </root/Desktop/ehandshake/temp.txt
+
 iwconfig
 
 echo -n "
@@ -44,10 +61,9 @@ then
 	
 fi
 
+read -p "Enter the name of the Handshake.cap :" y
 
-read -p "Enter the name of the Handshake.cap :" pt
-
-cowpatty -c -r /root/Desktop/$pt
+cowpatty -c -r /root/Desktop/ehandshake/$y
 
 #restarts network-manager
 

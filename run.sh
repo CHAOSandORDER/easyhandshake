@@ -62,6 +62,9 @@ echo " PRESS CTRL + C AFTER YOUR TARGET IS ON SCREEN"
 
 # airodump start
 
+mkdir /root/Desktop/ehandshake
+touch /root/Desktop/ehandshake/temp.txt
+
 if [ $ans -eq 0 ]
 
 then
@@ -97,7 +100,9 @@ echo -n "Enter the channel :"
 
 read ch
 
-read -p "Enter a filename :" name
+read -p "Enter a filename :" y
+
+echo "$y-01" > /root/Desktop/ehandshake/temp.txt
 
 # move into new terminal
 
@@ -110,7 +115,7 @@ if [ $ans -eq 0 ]
 then
 
 	
-	airodump-ng --bssid $bs --channel $ch --write /root/Desktop/$name wlan0mon
+	airodump-ng --bssid $bs --channel $ch --write /root/Desktop/$y wlan0mon
 	
 fi
 
@@ -119,7 +124,7 @@ if [ $ans -eq 1 ]
 then
 
 	
-	airodump-ng --bssid $bs --channel $ch -w /root/Desktop/$name wlan1mon
+	airodump-ng --bssid $bs --channel $ch -w /root/Desktop/$y wlan1mon
 	
 fi
 
@@ -128,11 +133,13 @@ if [ $ans -eq 2 ]
 then
 
 
-	airodump-ng --bssid $bs --channel $ch -w /root/Desktop/$name wlan2mon
+	airodump-ng --bssid $bs --channel $ch -w /root/Desktop/$y wlan2mon
 	
 fi
 
-rm $name-01.csv $name-01.kismet.netxml $name-01.log.csv $name-01.kismet.csv
+
+
+
 
 
 
