@@ -16,6 +16,10 @@ echo "
 
 chmod +x w.sh
 chmod +x r.sh
+mkdir /root/Desktop/ehandshake
+touch /root/Desktop/ehandshake/temp.txt
+chmod +x /root/Desktop/ehandshake/temp.txt
+
 
 iwconfig
 
@@ -61,9 +65,6 @@ fi
 echo " PRESS CTRL + C AFTER YOUR TARGET IS ON SCREEN"
 
 # airodump start
-
-mkdir /root/Desktop/ehandshake
-touch /root/Desktop/ehandshake/temp.txt
 
 if [ $ans -eq 0 ]
 

