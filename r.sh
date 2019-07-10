@@ -63,10 +63,12 @@ then
 
 	then
 
-		echo -n "Do you want to run Advancedwordlist? Press 1 to run else press ENTER:"
-		read d
-		if [ d -eq 1 ]
+		echo -n "Do you want to run Advancedwordlist? Press 1 to run else press ENTER :"
+		read k
+		
+		if [ $k -eq 1 ]
 		then
+			gnome-terminal -- "./nw.sh"
 			cd /root  
 			cd Advancedwordlist
 			chmod +x run.sh
