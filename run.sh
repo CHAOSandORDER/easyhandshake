@@ -1,5 +1,12 @@
 #!/bin/bash
 
+chmod +x w.sh
+chmod +x r.sh
+mkdir /root/Desktop/ehandshake
+touch /root/Desktop/ehandshake/temp.txt
+chmod +x /root/Desktop/ehandshake/temp.txt
+clear
+
 echo " 
                        ____    __    ___  _  _     
                       ( ___)  /__\  / __)( \/ )  
@@ -13,12 +20,6 @@ echo "
 
                                                                        by AVISHEK
 " 
-
-chmod +x w.sh
-chmod +x r.sh
-mkdir /root/Desktop/ehandshake
-touch /root/Desktop/ehandshake/temp.txt
-chmod +x /root/Desktop/ehandshake/temp.txt
 
 
 iwconfig
