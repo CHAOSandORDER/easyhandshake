@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+chmod +x nw.sh
 service network-manager restart
 
 echo -n "Do you want to aircrack ?Yes(1) or No(2). Enter 1 or 2 :"
@@ -37,6 +37,7 @@ then
 				
 			then
 
+				gnome-terminal -- "./nw.sh"
 				cd /root  
 				cd Advancedwordlist
 				chmod +x run.sh
