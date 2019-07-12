@@ -2,6 +2,7 @@
 
 chmod +x w.sh
 chmod +x r.sh
+chmod +x nw.sh
 mkdir /root/Desktop/ehandshake
 touch /root/Desktop/ehandshake/temp.txt
 chmod +x /root/Desktop/ehandshake/temp.txt
